@@ -10,9 +10,9 @@ public class Main {
         p1.getProgramma(0).toggleBlock();
         p1.getProgramma(3).toggleBlock();
 
-        p1.showProgramma();
-        p1.showBlockedProgrammas();
-        p1.showProgrammaLocation();
+        Menu m = new Menu();
+
+        m.MainMenu();
 
     }
 }
