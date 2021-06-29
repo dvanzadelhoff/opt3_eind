@@ -80,4 +80,15 @@ public class ProgrammaList {
         System.out.println("=========================================");
     }
 
+    public void showProgrammaLocation()
+    {
+        for (int i = 0; i < bevat.size(); i++)
+        {
+            if(bevat.get(i).ispIsBlocked())
+            {
+                System.out.println(i + ". " + bevat.get(i).getpName() + ": " + bevat.get(i).getpLocation());
+            }
+        }
+    }
+
 }

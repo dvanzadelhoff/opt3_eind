@@ -12,6 +12,7 @@ public class Main {
 
         p1.showProgramma();
         p1.showBlockedProgrammas();
+        p1.showProgrammaLocation();
 
     }
 }
