@@ -44,14 +44,15 @@ public class ProgrammaList {
 
     public void showProgramma()
     {
-        System.out.println("Alle Programmas:");
         System.out.println("=========================================");
+        System.out.println("Alle Programmas:");
+        System.out.println("-----------------------------------------");
 
         for (int i = 0; i < bevat.size(); i++)
         {
             if(bevat.get(i).ispIsBlocked())
             {
-                System.out.println(i + ". " + bevat.get(i).getpName() + " x");
+                System.out.println(i + ". " + bevat.get(i).getpName() + " X");
             }
 
             else
@@ -66,7 +67,7 @@ public class ProgrammaList {
     public void showBlockedProgrammas()
     {
         System.out.println("Alle geblokkeerde programmas:");
-        System.out.println("=========================================");
+        System.out.println("-----------------------------------------");
 
         for (int i = 0; i < bevat.size(); i++)
         {

@@ -6,7 +6,12 @@ public class Main {
 
         ProgrammaList p1 = ProgrammaList.getInstance();
 
+        //zorg ervoor dat je Word.toggleBlock kan doen
+        p1.getProgramma(0).toggleBlock();
+        p1.getProgramma(3).toggleBlock();
+
         p1.showProgramma();
+        p1.showBlockedProgrammas();
 
     }
 }
