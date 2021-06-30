@@ -1,15 +1,16 @@
 package com.company;
 
-public class SpecialeUser extends User{
+public class ProUser extends User {
 
     private int maxBlock = 10;
 
-    public SpecialeUser(int id, String name) {
-        super(id, name);
+    public ProUser(int id, String name, int age) {
+        super(id, name, age);
     }
 
     public int getMaxBlock()
     {
         return this.maxBlock;
     }
+
 }

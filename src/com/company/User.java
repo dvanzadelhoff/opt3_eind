@@ -1,16 +1,17 @@
 package com.company;
 
-public class User
-{
+abstract class User {
 
     private int id;
     private String name;
-    private int maxBlock = 5;
+    private int age;
+    private int maxBlock;
 
-    public User(int id, String name)
+    public User(int id, String name, int age)
     {
         this.name = name;
         this.id = id;
+        this.age = age;
     }
 
     public String getName()

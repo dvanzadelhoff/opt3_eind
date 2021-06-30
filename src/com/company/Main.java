@@ -7,13 +7,11 @@ public class Main {
         System.out.println();//negeer dit, dit is zodat er een ruimte is tussen de tekst en de rotzooi bovenaan de console. mijn OCD kan dat niet hendelen
 
         //een normale user kan alleen 5 programma's blokkeren
-        User u1 = new User(1, "dennis");
+        TrialUser u1 = new TrialUser(1, "dennis", 20);
 
         //een Speciale user kan 10 programma's blokkeren
-        User u2 = new SpecialeUser(2, "dennis");
+        ProUser u2 = new ProUser(2, "dennis", 20);
 
-        //een Speciale2 user kan 15 programma's blokkeren
-        User u3 = new SpecialeUser2(3, "dennis");
 
         Overzicht o = new Overzicht(u1);
 
@@ -46,5 +44,6 @@ public class Main {
 
         o.printAll();
         o.printBlocked();
+
     }
 }

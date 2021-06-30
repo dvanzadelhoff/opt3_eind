@@ -5,13 +5,13 @@ import java.util.ArrayList;
 public class Overzicht
 {
 
-    private User Owner;
+    private TrialUser Owner;
     private ArrayList<Programma> bevat;
     private ArrayList<Programma> blocked;
 
-    public Overzicht(User user)
+    public Overzicht(TrialUser trialUser)
     {
-        this.Owner = user;
+        this.Owner = trialUser;
 
         bevat = new ArrayList<>();
         blocked = new ArrayList<>();
