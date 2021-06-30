@@ -6,7 +6,6 @@ public class Main {
     {
         System.out.println();//negeer dit, dit is zodat er een ruimte is tussen de tekst en de rotzooi bovenaan de console. mijn OCD kan dat niet hendelen
 
-
         User u = new User(1, "dennis");
         Overzicht o = new Overzicht(u);
 
@@ -20,16 +19,14 @@ public class Main {
         o.addProgramma(new ExeProgramma("3", "desktop/"));
         o.addProgramma(new ExeProgramma("4", "desktop/"));
         o.addProgramma(new ExeProgramma("5", "desktop/"));
+        o.addProgramma(new BestandAdapter("cijfers", "desktop/", "Word",100, ".docx"));
 
-        o.blockProgramma(1);
-        o.blockProgramma(3);
-        o.blockProgramma(4);
         o.blockProgramma(6);
         o.blockProgramma(7);
         o.blockProgramma(2);
+        o.blockProgramma(10);
 
         o.printAll();
         o.printBlocked();
-
     }
 }
